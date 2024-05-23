@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="src/output.css" />
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <style>
+      html{
+        scroll-behavior: smooth;
+      }
+      .home {
+        background-image: url("./assets/images/one.jpg");
+        background-size: cover;
+        background-position: center;
+        height: 100svh;
+      }
+      a {
+        display: inline-block;
+      }
+
+      .ab-img{
+        background-image: url("./assets/images/tibetuplift_himalayas_raimond-klavins-l6jxljmeuoo-unsplash_0.jpeg");
+      }
+    </style>
+  </head>
+  <body class="bg-gray-100 scroll-smooth">
+    <!-- Navbar -->
+    <div class="out md:flex md:justify-center z-10">
+      <nav
+        class="bg-cyan-950 md:bg-white md:flex md:flex-row items-center justify-between fixed w-full top-0 md:bg-opacity-50 md:backdrop-blur-md md:my-5 md:rounded-full md:px-4 md:py-2 md:fixed md:w-11/12 md:m-auto md:shadow-md z-10"
+      >
+        <div class="logo">
+          <h2 class="md:text-xl text-2xl  font-extrabold p-2 text-cyan-50 md:text-cyan-950">
+            Gurkha&nbsp;Travels.
+          </h2>
+        </div>
+  
+        <ul
+          class="nav-icons bg-cyan-600 flex-col justify-center items-center pb-2 transition-all duration-1000 overflow-hidden md:flex md:flex-row md:pb-0 md:m-2 md:bg-transparent md:gap-4 hidden"
+          id="icons"
+        >
+          <li class="w-full">
+            <a
+              href="#home"
+              class="w-full inline-block p-2 text-center font-semibold hover:bg-cyan-50 hover:text-cyan-950 border-b-cyan-950 border-b-2 bg-cyan-600 text-cyan-100 md:border-0 md:hover:rounded-full md:px-4  md:text-cyan-950 md:bg-transparent md:font-semibold md:hover:bg-cyan-700 md:hover:text-white"
+              >Home</a
+            >
+          </li>
+          <li class="w-full">
+            <a
+              href="#about"
+              class="w-full inline-block p-2 text-center font-semibold hover:bg-cyan-50 hover:text-cyan-950 border-b-cyan-950 border-b-2 bg-cyan-600 text-cyan-100 md:border-0 md:hover:rounded-full md:px-4 md:hover:bg-cyan-700 md:hover:text-white md:text-cyan-950 md:bg-transparent md:font-semibold"
+              >About</a
+            >
+          </li>
+          <li class="w-full">
+            <a
+              href="#blogs"
+              class="w-full inline-block p-2 text-center font-semibold hover:bg-cyan-50 hover:text-cyan-950 border-b-cyan-950 border-b-2 bg-cyan-600 text-cyan-100 md:border-0 md:hover:rounded-full md:px-4 md:hover:bg-cyan-700 md:hover:text-white md:text-cyan-950 md:bg-transparent md:font-semibold"
+              >Blogs</a
+            >
+          </li>
+          <li class="w-full">
+            <a
+              href="#packages"
+              class="w-full inline-block p-2 text-center font-semibold hover:bg-cyan-50 hover:text-cyan-950 border-b-cyan-950 border-b-2 bg-cyan-600 text-cyan-100 md:border-0 md:hover:rounded-full md:px-4 md:hover:bg-cyan-700 md:hover:text-white md:text-cyan-950 md:bg-transparent md:font-semibold"
+              >Packages</a
+            >
+          </li>
+          <li class="w-100 flex items-center justify-center pt-2 md:pt-0">
+            <a
+              href="#contact"
+              class="inline-block p-2 text-center bg-cyan-900 w-11/12 font-bold border-cyan-950 text-cyan-50 rounded-full md:px-3 md:w-max hover:bg-cyan-400 md:bg-cyan-950 md:text-white md:border-0"
+              >Contact</a
+            >
+          </li>
+        </ul>
+  
+        <div
+          class="ham-icon flex-col gap-5 w-max absolute top-2.5 right-2 cursor-pointer group md:hidden"
+          id="ham-icon"
+          onclick="hamIcon()"
+        >
+          <div
+            class="bar w-5 h-1 bg-cyan-50 rounded-full m-1 group-[.is-active]:rotate-45 group-[.is-active]:absolute transition-all"
+          ></div>
+          <div
+            class="bar w-5 h-1 bg-cyan-50 rounded-full m-1 group-[.is-active]:hidden transition-all"
+          ></div>
+          <div
+            class="bar w-5 h-1 bg-cyan-50 rounded-full m-1 group-[.is-active]:-rotate-45 transition-all"
+          ></div>
+        </div>
+      </nav>
+    </div>
+    <!-- Home -->
+    <div
+      class="home w-100 flex-col flex justify-center items-center h-svh gap-2 md:gap-4 sm:h-svh"
+      id="home"
+    >
+      <h2 class="font-bold text-2xl md:text-4xl text-cyan-950 shadow-md">
+        The Perfect Place To
+      </h2>
+      <h1 class="font-black text-3xl md:text-5xl text-cyan-950 shadow-md">
+        Travel In Nepal
+      </h1>
+      <button>
+        <a href="#packages" class="w-100 rounded-md bg-cyan-950 p-4 text-lg font-semibold text-white shadow-md sm:transition-all sm:hover:rounded-2xl sm:hover:shadow-lg">View Packages</a>
+      </button>
+    </div>
+
+    <!-- About  -->
+    <div class="about p-6" id="about">
+      <h1 class="font-black text-2xl sm:text-3xl text-center text-cyan-950 p-4" >About Us</h1>
+      <div
+        class="bg-white shadow-lg  flex flex-col justify-center items-center gap-3 p-4 rounded-3xl md:flex md:flex-row md:p-0 md:rounded-full md:justify-between md:items-start h-full"
+      >
+        <div class="ab-img rounded-full md:min-w-56 md:max-w-200 min-h-60  w-80 sm:w-2/5 bg-slate-400 bg-cover md:h-full"></div>
+        <p class="w-full sm:w-full md:p-5 md:mr-12 md:mt-4 rounded-full text-justify">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi cumque
+          aliquam doloribus molestias. Dolor autem, quae expedita quidem veniam
+          iure alias, pariatur dolore soluta minima odit. Accusantium, nemo.
+          Enim, obcaecati officiis modi expedita repellat natus! Nam doloribus
+          obcaecati blanditiis mollitia, libero enim culpa aliquid esse
+          expedita?
+        </p>
+      </div>
+    </div>
+
+    <!-- Blogs  -->
+
+    <div id="blogs" class="bg-cyan-50 p-6 flex flex-col items-center">
+      <h1 class="font-black text-2xl sm:text-3xl text-center text-cyan-950 p-4" >Latest Blogs</h1>
+      
+      <div class="main-blogs flex flex-wrap justify-evenly p-4 gap-4 w-full">
+        <!-- Insert Other Blogs In This Div  -->
+        <!-- Blog 1 -->
+        <div class="blog bg-white backdrop-blur-lg shadow-lg min-w-40 max-w-60 p-4 rounded-lg flex flex-col gap-1 text-cyan-900 ">
+          <h3 class="font-bold text-lg line-clamp-1">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Numquam, suscipit?</h3>
+          <div class="img w-full h-20 bg-cyan-900 rounded-lg bg-cover" style="background-image: url('assets/images/tibetuplift_himalayas_raimond-klavins-l6jxljmeuoo-unsplash_0.jpeg');"></div>
+          <p class="font-semibold flex flex-row gap-1 items-center">
+            
+            <i class="fas fa-clock"></i>
+            <span>2024,Aug 10</span>
+            
+          </p>
+          <p class="font-semibold flex flex-row gap-1 items-center">
+            <i class="fas fa-pen-nib"></i>
+            <span>admin</span>
+            
+          </p>
+          <p class="text-clip line-clamp-5">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Modi eius cupiditate sint odio mollitia doloribus aperiam, harum ullam provident. Alias officia et atque voluptate maiores modi distinctio nesciunt dolorum ab soluta voluptates, necessitatibus tempora dolore inventore corrupti perferendis reprehenderit velit earum optio suscipit? Sit quaerat rem reprehenderit iste vel similique, consequuntur ea praesentium minima amet repellendus ducimus quam expedita incidunt debitis sequi eius quod eligendi provident. Sed ducimus modi aspernatur cupiditate eius quibusdam qui, voluptas accusamus commodi excepturi tempore aliquid dolores reiciendis? Veritatis laborum ducimus nemo! Tenetur laborum tempore quis nulla, nesciunt veniam sequi soluta blanditiis dignissimos numquam possimus delectus.</p>
+          <button class="bg-cyan-900 p-2 rounded-full font-bold text-white">Read More</button>
+        </div>
+
+      </div>
+
+     
+
+      <a href="" class="bg-white text-cyan-950 font-bold capitalize p-3 text-lg shadow-black shadow- w-max border-2 border-cyan-950 shadow-sm">Read all blogs</a>
+    </div>
+    <hr class="to-black">
+    <!-- Packages --> 
+    <div id="packages" class="packages flex justify-center flex-col items-center p-6 gap-5 bg-gradient-to-b from-white to-cyan-50 z-1">
+      <h1 class="font-black text-2xl sm:text-3xl text-center text-cyan-950" >Best Packages</h1>
+
+
+      <div class="packages flex flex-wrap gap-3 justify-evenly w-full">
+        <!-- Insert Packages Here  -->
+        <!-- Package 1  -->
+        <div class="text-cyan-950 min-w-56 max-w-80 bg-white backdrop-blur-sm bg-opacity-55 shadow-md border-2 border-black border-opacity-5 rounded-xl p-3 flex flex-col gap-1 z-0">
+          <h3 class="font-bold text-xl text-center line-clamp-1">Package Name</h3>
+          <div class="w-full rounded-xl h-40 bg-cover" style="background-image: url('./assets/images/tibetuplift_himalayas_raimond-klavins-l6jxljmeuoo-unsplash_0.jpeg');"></div>
+          <p class="flex flex-row items-center font-semibold gap-1"><i class="fa fa-dollar"></i>Cost</p>
+          <p class="flex flex-row items-center font-semibold gap-1"><i class="fa fa-clock"></i>Duration</p>
+          <p class="flex flex-row items-center font-semibold gap-1"><i class="fa-solid fa-tag"></i>Difficulty</p>
+          <p class="flex flex-row items-center font-semibold gap-1"><i class="fa fa-location-dot"></i>Location</p>
+          <p class="line-clamp-3">
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aperiam voluptatem sunt, iure laborum nemo ipsum libero corporis quod magni consequatur enim, sed, dolores numquam. Enim, quisquam?
+          </p>
+          <a href="" class="bg-cyan-900 text-white shadow-md font-semibold text-center p-2 rounded-full">Detail</a>
+          <a href="" class="bg-cyan-900 text-white shadow-md font-semibold text-center p-2 rounded-full">Book Now</a>
+        </div>
+
+      </div>
+
+
+      <a href="" class="bg-white text-cyan-950 font-bold capitalize p-3 text-lg shadow-black shadow- w-max border-2 border-cyan-950 shadow-sm">View All Packages</a>
+    </div>
+
+    <hr class="to-black">
+
+    <!-- Contact -->
+    <div class=" bg-white p-6" id="contact">      
+      <h1 class="font-black text-3xl sm:text-4xl text-center text-cyan-950" >Get In Touch</h1>
+      <div class="mt-4 inner-form bg-cyan-50 rounded-lg overflow-hidden flex flex-col sm:flex-row shadow-md">
+        <div class="details sm:w-full p-4 flex flex-col gap-1.5 bg-cyan-950 rounded-b-xl sm:rounded-lg text-gray-200">
+          <p class="flex font-semibold gap-1 items-center"><i class="fa-solid fa-location-dot text-g"></i>Trakeshwor -5 , Kathmandu</p>
+          <p class="flex font-semibold gap-1 items-center text-g"><i class="fa-solid fa-envelope"></i>chorcompany@chorhaina.fohor</p>
+          <p class="flex font-semibold gap-1 items-center"><i class="fa-solid fa-phone text-g"></i>9856574747</p>
+          
+          <p class="font-bold text-lg mt-2.5">Social Links</p>
+          <div class="links flex gap-4 ">
+            <a href=""><i class="fa-brands fa-facebook text-xl hover:transition-all hover:text-white"></i></a>
+            <a href=""><i class="fa-brands fa-instagram text-xl hover:transition-all hover:text-white"></i></a>
+            <a href=""><i class="fa-brands fa-twitter text-xl hover:transition-all hover:text-white"></i></a>
+          </div>
+        </div>
+        <form action="" class="bg-cyan-50 flex flex-col gap-2 p-4 sm:w-full sm:gap-2">
+          <h3 class="font-bold text-2xl text-center">Contact Form</h3>
+          <input type="text" name="" id="" placeholder="First Name" class="p-2 rounded-md outline-none text-cyan-950  shadow-sm border-black ">
+          <input type="text" name="" id="" placeholder="Last Name" class="p-2 rounded-md outline-none text-cyan-950  shadow-sm">
+          <input type="email" name="" id="" placeholder="Email" class="p-2 rounded-md outline-none text-cyan-950 shadow-sm border-black ">
+          <input type="number" name="" id="" placeholder="Insert Your Number" class="p-2 rounded-md outline-none text-cyan-950 ">
+          <textarea name="" id="" placeholder="Message" class="p-2 rounded-md outline-none text-cyan-950  shadow-sm border-black "></textarea>
+          <button class="bg-cyan-950 px-4 py-2 rounded-full font-semibold text-lg text-cyan-50">Send Message</button>
+        </form>
+      </div>
+    </div>
+
+    <div class="footer bg-cyan-950 w-full p-4 flex flex-col gap-1">
+      <p>Copyright &copy; 2024 Company | All Rights Reserved</p>
+      <p>Front End By <a href="https://www.mandipdevelops.tech">Mandip Sapkota</a></p>
+      <p>Back End By <a href="https://www.mandipdevelops.tech">Bishal Lamichhane</a></p>
+    </div>
+  </body>
+  </html>
+  
