@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Custom Blog</title>
+    
+    <link rel="stylesheet" href="src/output.css">
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+<body>
+       <!-- Nav  -->
+       <div class="out md:flex md:justify-center z-10">
+        <nav
+          class="bg-cyan-950 md:bg-white md:flex md:flex-row items-center justify-between fixed w-full top-0 md:bg-opacity-50 md:backdrop-blur-md md:my-5 md:rounded-full md:px-4  md:fixed md:w-11/12 md:m-auto md:shadow-md z-10"
+        >
+          <div class="logo">
+            <h2 class="md:text-xl text-2xl  font-extrabold p-2 text-cyan-50 md:text-cyan-950">
+              Gurkha&nbsp;Travels.
+            </h2>
+          </div>
+    
+          <ul
+            class="nav-icons bg-cyan-600 flex-col justify-center items-center transition-all duration-1000 overflow-hidden md:flex md:flex-row md:pb-0 md:m-2 md:bg-transparent md:gap-4 hidden"
+            id="icons"
+          >
+            <li class="w-full">
+              <a
+                href="index.html"
+                class="w-full inline-block p-2 text-center font-semibold hover:bg-cyan-50 hover:text-cyan-950 border-b-cyan-950 border-b-2 bg-cyan-600 text-cyan-100 md:border-0 md:hover:rounded-full md:px-4  md:text-cyan-950 md:bg-transparent md:font-semibold md:hover:bg-cyan-700 md:hover:text-white"
+                >Home</a
+              >
+            </li>
+            <li class="w-full">
+              <a
+                href="packages.html"
+                class="w-full inline-block p-2 text-center font-semibold hover:bg-cyan-50 hover:text-cyan-950 border-b-cyan-950 border-b-2 bg-cyan-600 text-cyan-100 md:border-0 md:hover:rounded-full md:px-4  md:text-cyan-950 md:bg-transparent md:font-semibold md:hover:bg-cyan-700 md:hover:text-white"
+                >Packages</a
+              >
+            </li>
+            <li class="w-full">
+              <a
+                href="blogs.html"
+                class="w-full inline-block p-2 text-center font-semibold hover:bg-cyan-50 hover:text-cyan-950 border-b-cyan-950 border-b-2 bg-cyan-600 text-cyan-100 md:border-0 md:hover:rounded-full md:px-4 md:hover:bg-cyan-700 md:hover:text-white md:text-cyan-950 md:bg-transparent md:font-semibold"
+                >Blogs</a
+              >
+            </li>
+          </ul>
+    
+          <div
+            class="ham-icon flex-col gap-5 w-max absolute top-2.5 right-2 cursor-pointer group md:hidden"
+            id="ham-icon"
+            onclick="hamIcon()"
+          >
+            <div
+              class="bar w-5 h-1 bg-cyan-50 rounded-full m-1 group-[.is-active]:rotate-45 group-[.is-active]:absolute transition-all"
+            ></div>
+            <div
+              class="bar w-5 h-1 bg-cyan-50 rounded-full m-1 group-[.is-active]:hidden transition-all"
+            ></div>
+            <div
+              class="bar w-5 h-1 bg-cyan-50 rounded-full m-1 group-[.is-active]:-rotate-45 transition-all"
+            ></div>
+          </div>
+        </nav>
+      </div>
+
+      <!-- Blog  -->
+      <div class="blog sm:mt-20 mt-12 p-4 text-cyan-950">
+        <h2 class="font-bold text-2xl sm:text-3xl">Why solo travel is not that good.</h2>
+
+        <ul class="tags mt-2 flex flex-row flex-wrap gap-2">
+          <li class="tag flex flex-row items-center gap-1 bg-cyan-950 w-max py-1 px-3 rounded-full text-white"><i class="fa-solid fa-user"></i>admin</li>
+          <li class="tag flex flex-row items-center gap-1 bg-cyan-950 w-max py-1 px-3 rounded-full text-white"><i class="fa-solid fa-clock"></i>25th July</li>
+          
+          <li class="tag flex flex-row items-center gap-1 bg-cyan-950 w-max py-1 px-3 rounded-full text-white"><i class="fa-solid fa-tag"></i>Adventure</li>
+          
+        </ul>
+
+        <img src="./assets/images/tibetuplift_himalayas_raimond-klavins-l6jxljmeuoo-unsplash_0.jpeg" class="mt-2 rounded-xl shadow-md max-w-96">
+
+        <p>
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Saepe, beatae minus. Iure magnam suscipit nam deleniti voluptatum qui ab libero.
+        </p>
+
+        <p>
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Saepe, beatae minus. Iure magnam suscipit nam deleniti voluptatum qui ab libero.
+        </p>
+        
+      </div>
+
+      <!-- Similar Blogs  -->
+
+      <div id="blogs" class="bg-cyan-50 p-4 flex flex-col items-center">
+        <h1 class="font-black text-2xl sm:text-3xl text-center text-cyan-950 p-4" >Other Similar Blogs</h1>
+        
+        <div class="main-blogs flex flex-wrap justify-evenly p-4 gap-4 w-full">
+          <!-- Insert Other Blogs In This Div  -->
+          <!-- Blog 1 -->
+          <div class="blog bg-white backdrop-blur-lg shadow-lg min-w-40 max-w-60 p-4 rounded-lg flex flex-col gap-1 text-cyan-900 ">
+            <h3 class="font-bold text-lg line-clamp-1">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Numquam, suscipit?</h3>
+            <div class="img w-full h-20 bg-cyan-900 rounded-lg bg-cover" style="background-image: url('assets/images/tibetuplift_himalayas_raimond-klavins-l6jxljmeuoo-unsplash_0.jpeg');"></div>
+            <p class="font-semibold flex flex-row gap-1 items-center">
+              
+              <i class="fas fa-clock"></i>
+              <span>2024,Aug 10</span>
+              
+            </p>
+            <p class="font-semibold flex flex-row gap-1 items-center">
+              <i class="fas fa-pen-nib"></i>
+              <span>admin</span>
+              
+            </p>
+            <p class="text-clip line-clamp-5">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Modi eius cupiditate sint odio mollitia doloribus aperiam, harum ullam provident. Alias officia et atque voluptate maiores modi distinctio nesciunt dolorum ab soluta voluptates, necessitatibus tempora dolore inventore corrupti perferendis reprehenderit velit earum optio suscipit? Sit quaerat rem reprehenderit iste vel similique, consequuntur ea praesentium minima amet repellendus ducimus quam expedita incidunt debitis sequi eius quod eligendi provident. Sed ducimus modi aspernatur cupiditate eius quibusdam qui, voluptas accusamus commodi excepturi tempore aliquid dolores reiciendis? Veritatis laborum ducimus nemo! Tenetur laborum tempore quis nulla, nesciunt veniam sequi soluta blanditiis dignissimos numquam possimus delectus.</p>
+            <button class="bg-cyan-900 p-2 rounded-full font-bold text-white">Read More</button>
+          </div>
+  
+        </div>
+  
+       
+  
+        <a href="blogs.html" class="bg-white text-cyan-950 font-bold capitalize p-3 text-lg shadow-black shadow- w-max border-2 border-cyan-950 shadow-sm">View all blogs</a>
+      </div>
+
+      <!-- Footer  -->
+      <div class="footer bg-cyan-950 w-full p-4">
+        <p class="text-lg font-semibold text-cyan-50">Copyright &copy; 2024 | Gurkha Travels</p>
+    </div>
+</body>
+</html>

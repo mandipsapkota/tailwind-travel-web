@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Custom Package</title>
+    <link rel="stylesheet" href="src/output.css">
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+<body class="bg-cyan-50">
+       <!-- Nav -->
+       <div class="out md:flex md:justify-center z-10">
+        <nav
+          class="bg-cyan-950 md:bg-white md:flex md:flex-row items-center justify-between fixed w-full top-0 md:bg-opacity-50 md:backdrop-blur-md md:my-5 md:rounded-full md:px-4  md:fixed md:w-11/12 md:m-auto md:shadow-md z-10"
+        >
+          <div class="logo">
+            <h2 class="md:text-xl text-2xl  font-extrabold p-2 text-cyan-50 md:text-cyan-950">
+              Gurkha&nbsp;Travels.
+            </h2>
+          </div>
+    
+          <ul
+            class="nav-icons bg-cyan-600 flex-col justify-center items-center transition-all duration-1000 overflow-hidden md:flex md:flex-row md:pb-0 md:m-2 md:bg-transparent md:gap-4 hidden"
+            id="icons"
+          >
+            <li class="w-full">
+              <a
+                href="index.html"
+                class="w-full inline-block p-2 text-center font-semibold hover:bg-cyan-50 hover:text-cyan-950 border-b-cyan-950 border-b-2 bg-cyan-600 text-cyan-100 md:border-0 md:hover:rounded-full md:px-4  md:text-cyan-950 md:bg-transparent md:font-semibold md:hover:bg-cyan-700 md:hover:text-white"
+                >Home</a
+              >
+            </li>
+            <li class="w-full">
+              <a
+                href="packages.html"
+                class="w-full inline-block p-2 text-center font-semibold hover:bg-cyan-50 hover:text-cyan-950 border-b-cyan-950 border-b-2 bg-cyan-600 text-cyan-100 md:border-0 md:hover:rounded-full md:px-4  md:text-cyan-950 md:bg-transparent md:font-semibold md:hover:bg-cyan-700 md:hover:text-white"
+                >Packages</a
+              >
+            </li>
+            <li class="w-full">
+              <a
+                href="blogs.html"
+                class="w-full inline-block p-2 text-center font-semibold hover:bg-cyan-50 hover:text-cyan-950 border-b-cyan-950 border-b-2 bg-cyan-600 text-cyan-100 md:border-0 md:hover:rounded-full md:px-4 md:hover:bg-cyan-700 md:hover:text-white md:text-cyan-950 md:bg-transparent md:font-semibold"
+                >Blogs</a
+              >
+            </li>
+          </ul>
+    
+          <div
+            class="ham-icon flex-col gap-5 w-max absolute top-2.5 right-2 cursor-pointer group md:hidden"
+            id="ham-icon"
+            onclick="hamIcon()"
+          >
+            <div
+              class="bar w-5 h-1 bg-cyan-50 rounded-full m-1 group-[.is-active]:rotate-45 group-[.is-active]:absolute transition-all"
+            ></div>
+            <div
+              class="bar w-5 h-1 bg-cyan-50 rounded-full m-1 group-[.is-active]:hidden transition-all"
+            ></div>
+            <div
+              class="bar w-5 h-1 bg-cyan-50 rounded-full m-1 group-[.is-active]:-rotate-45 transition-all"
+            ></div>
+          </div>
+        </nav>
+      </div>
+
+      <!-- Package  -->
+      <div class="package sm:mt-20 mt-12 p-4 text-cyan-950">
+        <h2 class="title font-bold text-2xl sm:text-3xl">Manaslu Trek : A amazing guide to manaslu</h2>
+
+        <div class="details mt-2">
+            <h3 class="text-lg sm:text-xl font-semibold">Trip Details</h3>
+            <ul class="details ml-2">
+                <li class="duration flex flex-row gap-1 items-center"><i class="fa-solid fa-clock"></i>4 days</li>
+                <li class="location flex flex-row gap-1 items-center"><i class="fa-solid fa-location-dot"></i>Manaslu</li>
+                <li class="difficulty flex flex-row gap-1 items-center"><i class="fa-solid fa-filter"></i >Moderate</li>
+                <li class="cost flex flex-row gap-1 items-center"><i class="fa-solid fa-dollar-sign"></i>Cost</li>
+            </ul>
+        </div>
+
+        <div class="gallery mt-2">
+            <h3 class="text-lg sm:text-xl font-semibold">Trip Gallery</h3>
+            <div class="images grid mt-1 md:grid-cols-4 sm:grid-cols-3 grid-cols-2 gap-2">
+                <img src="./assets/images/tibetuplift_himalayas_raimond-klavins-l6jxljmeuoo-unsplash_0.jpeg" alt="" class="rounded-md">
+                <img src="./assets/images/tibetuplift_himalayas_raimond-klavins-l6jxljmeuoo-unsplash_0.jpeg" alt="" class="rounded-md">
+                <img src="./assets/images/tibetuplift_himalayas_raimond-klavins-l6jxljmeuoo-unsplash_0.jpeg" alt="" class="rounded-md">
+                <img src="./assets/images/tibetuplift_himalayas_raimond-klavins-l6jxljmeuoo-unsplash_0.jpeg" alt="" class="rounded-md">
+            </div>
+        </div>
+
+        <div class="itenary mt-2">
+            <h3 class="text-lg sm:text-xl font-semibold">Trip Itinary</h3>
+            <ul>
+                <li><span>Day 1:</span>Day 1 details.</li>
+            </ul>
+        </div>
+
+        <div class="trip-summary mt-2">
+            <h3 class="text-lg sm:text-xl font-semibold">Trip Summary</h3>
+            <p class="paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus cum ipsum natus, totam nostrum nulla voluptatum animi molestias error accusantium labore velit enim at ullam, nobis maxime dolor? Id blanditiis eaque doloribus laborum nobis temporibus consequuntur!</p>
+        </div>
+
+      </div>
+
+      <!-- Other Packages  -->
+      <div id="packages" class="packages flex justify-center flex-col items-center gap-5 bg-cyan-50 z-1 p-4">
+        <h1 class="font-bold text-2xl sm:text-3xl text-center text-cyan-950" >Other Simlar Packages</h1>
+  
+  
+        <div class="packages flex flex-wrap gap-3 justify-evenly w-full">
+          <!-- Insert Packages Here  -->
+          <!-- Package 1  -->
+          <div class="text-cyan-950 min-w-56 max-w-80 bg-cyan-5 backdrop-blur-sm bg-opacity-55 shadow-md border-2 border-black border-opacity-5 rounded-xl p-3 flex flex-col gap-1 z-0">
+            <h3 class="font-bold text-xl text-center line-clamp-1">Package Name</h3>
+            <div class="w-full rounded-xl h-40 bg-cover" style="background-image: url('./assets/images/tibetuplift_himalayas_raimond-klavins-l6jxljmeuoo-unsplash_0.jpeg');"></div>
+            <p class="flex flex-row items-center font-semibold gap-1"><i class="fa fa-dollar"></i>Cost</p>
+            <p class="flex flex-row items-center font-semibold gap-1"><i class="fa fa-clock"></i>Duration</p>
+            <p class="flex flex-row items-center font-semibold gap-1"><i class="fa-solid fa-tag"></i>Difficulty</p>
+            <p class="flex flex-row items-center font-semibold gap-1"><i class="fa fa-location-dot"></i>Location</p>
+            <p class="line-clamp-3">
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aperiam voluptatem sunt, iure laborum nemo ipsum libero corporis quod magni consequatur enim, sed, dolores numquam. Enim, quisquam?
+            </p>
+            <a href="custom-package.html" class="bg-cyan-900 text-white shadow-md font-semibold text-center p-2 rounded-full">Detail</a>
+            
+          </div>
+
+          <a href="packages.html" class="bg-white text-cyan-950 font-bold capitalize p-3 text-lg shadow-black shadow- w-max border-2 border-cyan-950 shadow-sm">View All Packages</a>
+        </div>
+  
+      </div>
+
+      <!-- Footer  -->
+      <div class="footer bg-cyan-950 w-full p-4">
+        <p class="text-lg font-semibold text-cyan-50">Copyright &copy; 2024 | Gurkha Travels</p>
+    </div>
+</body>
+</html>
